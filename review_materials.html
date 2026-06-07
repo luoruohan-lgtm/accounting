@@ -1,0 +1,292 @@
+<!doctype html><html lang='zh-CN'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Intermediate Accounting I 教学型复习讲义</title><style>
+:root{--bg:#f6f8fb;--paper:#fff;--ink:#172026;--muted:#607080;--line:#dce4ee;--blue:#1f4e79;--green:#21806a;--gold:#b7791f;--shadow:0 14px 34px rgba(30,50,70,.10)}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,'Microsoft YaHei',sans-serif;line-height:1.82;color:var(--ink);background:var(--bg)}.wrap{display:grid;grid-template-columns:280px 1fr;gap:22px;max-width:1450px;margin:0 auto;padding:20px}.side{position:sticky;top:20px;height:calc(100vh - 40px);overflow:auto;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:8px;padding:16px}.side h1{font-size:20px;margin:0 0 8px}.side p{color:var(--muted);font-size:13px}.side a{display:block;text-decoration:none;color:var(--blue);padding:8px;border-radius:6px}.side a:hover{background:#eaf2f8}.main{min-width:0}.top,.chapter{background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:8px;margin-bottom:20px}.top{padding:24px}.top h1{margin:0;font-size:32px}.top p{color:var(--muted)}.chapter header{padding:24px;border-bottom:1px solid var(--line);background:linear-gradient(135deg,#fff,#eef7f4)}.chapter h2{margin:0;font-size:28px}.mission{font-size:18px;font-weight:700}.en{color:var(--blue);font-weight:700}.content{padding:24px}.lesson{border-left:5px solid var(--blue);background:#fbfdff;border-radius:8px;padding:16px;margin-bottom:16px}.lesson h3{margin:0 0 8px;font-size:20px}.lesson p{margin:8px 0}.note{border-left:5px solid var(--green);background:#f7fffb}.formula{border-left:5px solid var(--gold);background:#fffaf0}code{background:#fff;border:1px dashed #c9d5df;border-radius:5px;padding:2px 6px}.backtop{position:fixed;right:18px;bottom:18px;background:var(--blue);color:white;text-decoration:none;padding:10px 14px;border-radius:8px}@media(max-width:850px){.wrap{display:block;padding:12px}.side{position:static;height:auto;margin-bottom:12px}.top h1{font-size:24px}.chapter h2{font-size:22px}}
+</style>
+<style id="review-interaction-style">
+.mini-quiz{border:1px solid var(--line);border-left:5px solid var(--green);background:#f7fffb;border-radius:8px;padding:16px;margin-top:18px}
+.mini-quiz h3{margin-top:0}.mini-q{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px;margin:10px 0}
+.mini-q button{display:block;width:100%;text-align:left;margin:6px 0;padding:9px 10px;border:1px solid var(--line);border-radius:7px;background:#fff;cursor:pointer}
+.mini-q button.correct{background:#eaf7f1;border-color:#21806a}.mini-q button.wrong{background:#fff0ec;border-color:#d96b52}
+.mini-exp{display:none;color:var(--muted);margin-top:8px}.mini-score{font-weight:700;color:var(--blue)}
+</style>
+
+</head><body><div class='wrap'>
+<aside class='side' id='top'><h1>中级财务会计 I</h1><p>教学型复习讲义：以中文讲透，保留英文考试表达。</p><a href='#chapter-1'>Chapter 1: Financial Accounting Overview</a>
+<a href='#chapter-2'>Chapter 2: Accounting Process</a>
+<a href='#chapter-3'>Chapter 3: Balance Sheet and Financial Disclosures</a>
+<a href='#chapter-4'>Chapter 4: Income Statement, Comprehensive Income, and Statement of Cash Flows</a>
+<a href='#chapter-5'>Chapter 5: Time Value of Money</a>
+<a href='#chapter-6'>Chapter 6: Revenue Recognition</a>
+<a href='#chapter-7'>Chapter 7: Cash and Receivables</a>
+<a href='#chapter-8'>Chapter 8: Inventory Overview and Cost Flow</a>
+<a href='#chapter-9'>Chapter 9: Subsequent Measurement of Inventory</a>
+<a href='#chapter-10'>Chapter 10: Property, Plant, Equipment, and Intangible Assets</a>
+<a href='#chapter-11'>Chapter 11: Depreciation, Impairment, and Disposal / Asset Cost Allocation</a></aside><main class='main'>
+<section class='top'><h1>Intermediate Accounting I 教学型复习讲义</h1><p>这一版不再做术语表和互动卡片，而是按老师讲课方式展开。每章先解释为什么学，再把规则、计算、分录和例题逻辑讲清楚。</p></section>
+<section class='chapter' id='chapter-1'><header><h2>Chapter 1: Financial Accounting Overview</h2><p class='mission'>财务会计概览</p></header><div class='content'>
+<article class='lesson note'><h3>为什么要学财务会计</h3><p>财务会计的出发点不是“企业要记账”，而是资本市场需要信息。公司需要资金，投资者和债权人需要判断这家公司未来能否产生现金流。因此 financial accounting 的核心任务，是把企业发生的经济活动，用一套可比较、可验证、可审计的规则转化为 financial statements。英文考试常说 decision-useful information，意思是信息要帮助 users 判断 future cash flows 的 amount, timing, and uncertainty。</p></article>
+<article class='lesson'><h3>现金流视角</h3><p>课件中用投资例子说明：投资者花 $10,000 买股票，收到 $400 dividends，最后以 $10,600 卖出。这个投资的 return 不是只看股利 $400，而是 ($400 dividends + $600 price appreciation) / $10,000 = 10%。这说明报表使用者关心的是未来现金流和回报，而不是单个账户名字。</p></article>
+<article class='lesson'><h3>Cash basis 与 accrual basis</h3><p>Cash basis accounting 只在现金收付时记录，所以它能突出 cash effects of operations，但它不能完整反映企业已经赚取的收入和尚未支付但已经发生的费用。Accrual accounting 则要求 revenues recognized when earned and expenses recognized when incurred。比如 12 月已经提供服务但 1 月才收钱，收入属于 12 月；12 月已经使用水电但 1 月才付款，费用属于 12 月。中级财务会计大部分题目都在考你能否摆脱“收钱才算收入、付钱才算费用”的直觉。</p></article>
+<article class='lesson'><h3>确认、计量和披露</h3><p>Recognition 是把一个项目放进报表；measurement 是决定它用多少钱列示；disclosure 是在附注中解释政策、估计、风险和细节。比如一项诉讼，如果很可能败诉且金额能合理估计，就要确认 liability；如果只是 reasonably possible，可能只披露；如果 remote，通常不披露。这个思路会贯穿坏账、存货跌价、收入合同和资产减值。</p></article>
+<article class='lesson'><h3>会计要素</h3><p>Assets 是由过去事项产生、企业控制、预期能带来 future economic benefits 的资源。Liabilities 是 present obligations，会导致未来经济利益流出。Equity 是 assets 减 liabilities 后的 residual interest。Revenues 和 expenses 通常来自 major ongoing operations；gains 和 losses 通常来自 peripheral or incidental transactions。考试分类题要先问：这是主要经营活动，还是边缘事项？这是资源、义务，还是权益变化？</p></article>
+<article class='lesson'><h3>准则制定和审计</h3><p>U.S. GAAP 主要由 FASB 制定，SEC 对上市公司有监管权。IASB 制定 IFRS。Auditors 的作用是增加报表 credibility，判断报表是否在重大方面按 GAAP 公允列报，而不是保证公司一定赚钱，也不是替投资者做投资决策。</p></article>
+<div class='mini-quiz' id='mini-quiz-chapter-1'><h3>课堂小测试 / Mini Check</h3><p>先自己选，再看中文解析。题目用英文，解析帮你纠错。</p><div class='mini-score'>Completed: 0 / 2</div>
+<div class='mini-q'><p><b>Q1.</b> Under accrual accounting, revenue should usually be recognized when:</p>
+<button type='button' data-i='0' onclick='answerMini(this,1)'>A. cash is collected</button>
+<button type='button' data-i='1' onclick='answerMini(this,1)'>B. goods or services are provided</button>
+<button type='button' data-i='2' onclick='answerMini(this,1)'>C. dividends are declared</button>
+<div class='mini-exp'><b>解析：</b>权责发生制看 earned/performed，不是只看现金。</div></div>
+<div class='mini-q'><p><b>Q2.</b> An auditor primarily adds:</p>
+<button type='button' data-i='0' onclick='answerMini(this,1)'>A. profit guarantees</button>
+<button type='button' data-i='1' onclick='answerMini(this,1)'>B. credibility to financial statements</button>
+<button type='button' data-i='2' onclick='answerMini(this,1)'>C. future stock returns</button>
+<div class='mini-exp'><b>解析：</b>审计师提供合理保证和可信度，不保证盈利。</div></div>
+</div>
+</div></section>
+<section class='chapter' id='chapter-2'><header><h2>Chapter 2: Accounting Process</h2><p class='mission'>会计循环与分录逻辑</p></header><div class='content'>
+<article class='lesson'><h3>会计循环的整体图像</h3><p>一笔交易从 source document 开始，比如发票、账单、收据、合同。会计人员先分析交易影响哪些账户，再写 journal entry，然后 post 到 ledger。期末先做 trial balance，再做 adjusting entries，形成 adjusted trial balance，编制 financial statements，最后 closing temporary accounts。</p></article>
+<article class='lesson'><h3>会计等式和借贷</h3><p>所有分录都围绕 Assets = Liabilities + Shareholders&#x27; Equity。Debit 和 credit 不是“增加/减少”的同义词，而是账户左右两边。Assets、expenses、dividends 增加通常在 debit；liabilities、equity、revenues 增加通常在 credit。做分录时不要先想借贷，先想账户性质和增减。</p></article>
+<article class='lesson'><h3>永久账户和临时账户</h3><p>Permanent accounts 是资产负债表账户，例如 Cash、Accounts Receivable、Inventory、Accounts Payable、Common Stock、Retained Earnings，余额带到下一期。Temporary accounts 是收入、费用、利得、损失、股利账户，期末要 close 到 retained earnings。</p></article>
+<article class='lesson formula'><h3>销售和存货分录</h3><p>如果使用 perpetual inventory system，销售存货通常有两组分录：第一组记录收入和应收/现金，Debit Cash or Accounts Receivable, Credit Sales Revenue；第二组记录成本，Debit Cost of Goods Sold, Credit Inventory。很多同学只写收入分录，忘记成本分录。</p></article>
+<article class='lesson formula'><h3>调整分录一：预付费用</h3><p>Prepaid expenses 先作为 asset，因为未来还有 benefit。随着时间流逝或资源消耗，资产减少、费用增加。例：Supplies purchased $2,000，期末盘点剩 $1,200，则已经消耗 $800。调整分录是 Debit Supplies Expense $800, Credit Supplies $800。</p></article>
+<article class='lesson formula'><h3>调整分录二：预收收入</h3><p>Deferred revenue 是先收客户钱但还没履约，因此是 liability。等服务提供后，减少 liability 并确认 revenue。例：收到 $1,000 两个月租金，期末只赚取 $250，则 Debit Deferred Rent Revenue $250, Credit Rent Revenue $250。</p></article>
+<article class='lesson formula'><h3>调整分录三：应计费用和应计收入</h3><p>Accrued expense 是费用已经发生但尚未付款或记录，例如 interest payable、salaries payable。分录是 Debit Expense, Credit Payable。Accrued revenue 是收入已经赚取但尚未收款或记录，分录是 Debit Receivable, Credit Revenue。</p></article>
+<article class='lesson'><h3>折旧调整</h3><p>Depreciation 是长期资产成本在使用期内的分配。课件例子：office equipment cost $12,000，useful life 60 months，no residual value，则每月 depreciation expense = $200。分录是 Debit Depreciation Expense, Credit Accumulated Depreciation。Accumulated depreciation 是 contra asset，不是 liability。</p></article>
+<div class='mini-quiz' id='mini-quiz-chapter-2'><h3>课堂小测试 / Mini Check</h3><p>先自己选，再看中文解析。题目用英文，解析帮你纠错。</p><div class='mini-score'>Completed: 0 / 2</div>
+<div class='mini-q'><p><b>Q1.</b> A prepaid expense initially is recorded as:</p>
+<button type='button' data-i='0' onclick='answerMini(this,0)'>A. an asset</button>
+<button type='button' data-i='1' onclick='answerMini(this,0)'>B. a liability</button>
+<button type='button' data-i='2' onclick='answerMini(this,0)'>C. revenue</button>
+<div class='mini-exp'><b>解析：</b>预付费用先是 asset，消耗后转 expense。</div></div>
+<div class='mini-q'><p><b>Q2.</b> Accumulated depreciation is:</p>
+<button type='button' data-i='0' onclick='answerMini(this,1)'>A. a liability</button>
+<button type='button' data-i='1' onclick='answerMini(this,1)'>B. a contra asset</button>
+<button type='button' data-i='2' onclick='answerMini(this,1)'>C. a revenue account</button>
+<div class='mini-exp'><b>解析：</b>累计折旧抵减资产账面价值。</div></div>
+</div>
+</div></section>
+<section class='chapter' id='chapter-3'><header><h2>Chapter 3: Balance Sheet and Financial Disclosures</h2><p class='mission'>资产负债表与披露</p></header><div class='content'>
+<article class='lesson note'><h3>资产负债表的作用</h3><p>Balance sheet 是 point-in-time statement，报告某一日期的 assets、liabilities、shareholders&#x27; equity。它不是一段期间的利润表。它的分类结构帮助使用者判断 liquidity、solvency 和 financial flexibility。</p></article>
+<article class='lesson'><h3>资产分类</h3><p>Current assets 是预计一年或一个 operating cycle 内转化为现金、出售或消耗的资产，包括 cash and equivalents、short-term investments、accounts receivable、inventory、prepaid expenses。Long-term assets 包括 property and equipment、intangible assets、goodwill、deferred tax assets 等。</p></article>
+<article class='lesson'><h3>负债分类</h3><p>Current liabilities 是预计一年或 operating cycle 内清偿的义务，包括 accounts payable、accrued liabilities、income taxes payable、current portion of long-term debt。Long-term liabilities 包括 long-term debt、deferred tax liabilities 等。长期债务中一年内到期的本金要单独列为 current liability。</p></article>
+<article class='lesson'><h3>权益分类</h3><p>Shareholders&#x27; equity 包括 common stock、additional paid-in capital、retained earnings、accumulated other comprehensive income/loss。Retained earnings 是累计净利润减去股利后的权益余额，不等于现金。公司可能 retained earnings 很高但现金很少。</p></article>
+<article class='lesson'><h3>披露的意义</h3><p>很多报表数字不能单独解释风险。Disclosure notes 会说明 accounting policies、debt terms、contingencies、restricted cash、inventory methods、depreciation methods 等。考试问 disclosure 时，不要只想到“附注很长”，而要理解附注补充 recognition and measurement 的背景。</p></article>
+<article class='lesson formula'><h3>短期偿债指标</h3><p>Working capital = current assets - current liabilities，是金额。Current ratio = current assets / current liabilities，是倍数。Acid-test ratio 更严格，只用 cash、short-term investments、accounts receivable 等 quick assets，排除 inventory、prepaids 和 restricted cash。</p></article>
+<article class='lesson formula'><h3>长期偿债指标</h3><p>Debt-to-equity ratio = liabilities / shareholders&#x27; equity，用来衡量杠杆。Times interest earned = income before interest and taxes / interest expense，用来衡量企业用利润覆盖利息的能力。</p></article>
+<div class='mini-quiz' id='mini-quiz-chapter-3'><h3>课堂小测试 / Mini Check</h3><p>先自己选，再看中文解析。题目用英文，解析帮你纠错。</p><div class='mini-score'>Completed: 0 / 2</div>
+<div class='mini-q'><p><b>Q1.</b> Inventory is normally excluded from:</p>
+<button type='button' data-i='0' onclick='answerMini(this,1)'>A. current assets</button>
+<button type='button' data-i='1' onclick='answerMini(this,1)'>B. acid-test ratio</button>
+<button type='button' data-i='2' onclick='answerMini(this,1)'>C. working capital</button>
+<div class='mini-exp'><b>解析：</b>速动比率排除 inventory 和 prepaid items。</div></div>
+<div class='mini-q'><p><b>Q2.</b> Retained earnings represents:</p>
+<button type='button' data-i='0' onclick='answerMini(this,1)'>A. cash in the bank</button>
+<button type='button' data-i='1' onclick='answerMini(this,1)'>B. cumulative earnings retained</button>
+<button type='button' data-i='2' onclick='answerMini(this,1)'>C. accounts receivable</button>
+<div class='mini-exp'><b>解析：</b>留存收益是权益余额，不等于现金。</div></div>
+</div>
+</div></section>
+<section class='chapter' id='chapter-4'><header><h2>Chapter 4: Income Statement, Comprehensive Income, and Statement of Cash Flows</h2><p class='mission'>利润表、综合收益与现金流量表</p></header><div class='content'>
+<article class='lesson'><h3>利润表分层</h3><p>Income statement 报告一段期间内的 revenues、expenses、gains、losses。基本结构是 Sales revenue - Cost of goods sold = Gross profit；再减 selling、general and administrative、R&amp;D、restructuring 等 operating expenses 得到 operating income；再加减 interest income、interest expense、gain/loss on investments 等 nonoperating items。</p></article>
+<article class='lesson'><h3>持续经营收益</h3><p>Income from continuing operations 是企业持续经营部分的税后收益。它比 net income 更适合预测未来，因为 discontinued operations 和某些特殊项目可能不持续。</p></article>
+<article class='lesson'><h3>不寻常或不频繁项目</h3><p>Unusual or infrequent items 仍然在 income from continuing operations 中报告，通常不作为税后单独项目。Extraordinary items 在现行 GAAP 下不再单独列示。</p></article>
+<article class='lesson'><h3>终止经营</h3><p>Discontinued operations 要满足 component 已出售或 held for sale，并且代表 strategic shift。它包括 component 的 operating income/loss 和 disposal gain/loss，税后单独列在 continuing operations 后面。例：经营损失 $5m，处置利得 $3m，税率 25%，税前净损失 $2m，税后损失 $1.5m。</p></article>
+<article class='lesson'><h3>每股收益</h3><p>Basic EPS = (Net income - preferred dividends) / weighted-average common shares outstanding。注意 preferred dividends 要先扣除，因为 EPS 衡量普通股股东每股收益。Diluted EPS 还考虑潜在普通股的稀释影响。</p></article>
+<article class='lesson'><h3>综合收益</h3><p>Comprehensive income = Net income + Other comprehensive income。OCI 包括某些未进入 net income 的项目，它们累计进入 AOCI。考试重点是区分 net income、OCI、comprehensive income。</p></article>
+<article class='lesson'><h3>现金流量表</h3><p>Statement of cash flows 把现金流分为 operating、investing、financing。Operating 通常与收入费用相关；investing 包括购买和出售长期资产、投资；financing 包括发行股票、借款、偿还本金、支付股利。购买设备是 investing outflow；支付股利是 financing outflow，不是 expense。</p></article>
+<div class='mini-quiz' id='mini-quiz-chapter-4'><h3>课堂小测试 / Mini Check</h3><p>先自己选，再看中文解析。题目用英文，解析帮你纠错。</p><div class='mini-score'>Completed: 0 / 2</div>
+<div class='mini-q'><p><b>Q1.</b> Discontinued operations are reported:</p>
+<button type='button' data-i='0' onclick='answerMini(this,1)'>A. before sales revenue</button>
+<button type='button' data-i='1' onclick='answerMini(this,1)'>B. separately and net of tax</button>
+<button type='button' data-i='2' onclick='answerMini(this,1)'>C. as operating expenses only</button>
+<div class='mini-exp'><b>解析：</b>终止经营在持续经营收益后税后列示。</div></div>
+<div class='mini-q'><p><b>Q2.</b> Dividends paid are usually classified as:</p>
+<button type='button' data-i='0' onclick='answerMini(this,2)'>A. operating cash outflow</button>
+<button type='button' data-i='1' onclick='answerMini(this,2)'>B. investing cash outflow</button>
+<button type='button' data-i='2' onclick='answerMini(this,2)'>C. financing cash outflow</button>
+<div class='mini-exp'><b>解析：</b>支付股利是筹资活动现金流出。</div></div>
+</div>
+</div></section>
+<section class='chapter' id='chapter-5'><header><h2>Chapter 5: Time Value of Money</h2><p class='mission'>货币时间价值</p></header><div class='content'>
+<article class='lesson note'><h3>时间价值的直觉</h3><p>今天的 $1 比未来的 $1 更值钱，因为今天的钱可以投资赚取 interest。Future value 是把现在的钱滚到未来，present value 是把未来的钱折回今天。会计中很多长期应收应付、债券、租赁和资产负债估值都依赖 present value。</p></article>
+<article class='lesson'><h3>单利和复利</h3><p>Simple interest 只对本金计算利息；compound interest 对本金和以前累积的利息一起计算利息。例如 $1,000，10%，半年复利一次，一年后不是简单的 $1,100，而是 $1,102.50，有效年利率 10.25%。</p></article>
+<article class='lesson formula'><h3>现值和终值</h3><p>PV = FV × present value factor。FV = PV × future value factor。课件例子：$55,000 一年后收，10% 折现，PV factor 0.90909，PV = $50,000。$60,500 两年后收，PV factor 0.82645，PV 也是 $50,000。</p></article>
+<article class='lesson'><h3>未知利率或期数</h3><p>如果已知 PV 和 FV，可以通过 PV/FV 找 factor，再查表确定 interest rate 或 periods。例如 $500 现值变成 $605，两年后收，PV/FV = 0.82645，对应 10%、2 periods。</p></article>
+<article class='lesson'><h3>年金</h3><p>Annuity 是等额、等间隔现金流。Ordinary annuity 在每期期末付款；annuity due 在每期期初付款。期初付款早一期间，所以现值更高。做题先画 timeline，判断现金流发生在 period beginning 还是 period end。</p></article>
+<article class='lesson'><h3>票据估值</h3><p>有明确利息的 note，可用未来本金和利息折现。没有 stated interest 的 noninterest-bearing note 仍然隐含利息，初始入账金额应是 present value，差额作为 interest revenue/expense 随时间确认。</p></article>
+<article class='lesson'><h3>有效利率法</h3><p>Interest revenue/expense = carrying amount × effective rate。Cash interest = face amount × stated rate。两者差额调整 carrying amount。这是后续债券和长期票据的基础。</p></article>
+<div class='mini-quiz' id='mini-quiz-chapter-5'><h3>课堂小测试 / Mini Check</h3><p>先自己选，再看中文解析。题目用英文，解析帮你纠错。</p><div class='mini-score'>Completed: 0 / 2</div>
+<div class='mini-q'><p><b>Q1.</b> Payments at the end of each period are:</p>
+<button type='button' data-i='0' onclick='answerMini(this,0)'>A. ordinary annuity</button>
+<button type='button' data-i='1' onclick='answerMini(this,0)'>B. annuity due</button>
+<button type='button' data-i='2' onclick='answerMini(this,0)'>C. single sum</button>
+<div class='mini-exp'><b>解析：</b>期末等额付款是 ordinary annuity。</div></div>
+<div class='mini-q'><p><b>Q2.</b> Present value converts:</p>
+<button type='button' data-i='0' onclick='answerMini(this,1)'>A. today's cash to future cash</button>
+<button type='button' data-i='1' onclick='answerMini(this,1)'>B. future cash to today's equivalent</button>
+<button type='button' data-i='2' onclick='answerMini(this,1)'>C. expenses to revenue</button>
+<div class='mini-exp'><b>解析：</b>现值是把未来现金流折回今天。</div></div>
+</div>
+</div></section>
+<section class='chapter' id='chapter-6'><header><h2>Chapter 6: Revenue Recognition</h2><p class='mission'>收入确认</p></header><div class='content'>
+<article class='lesson note'><h3>收入确认的核心</h3><p>Revenue recognition 不是收钱时确认收入，而是在 control of promised goods or services transfers to the customer 时确认。现行模型是 control-transfer model，不是单纯 cash-collection model。</p></article>
+<article class='lesson'><h3>五步模型</h3><p>Step 1 identify the contract；Step 2 identify performance obligations；Step 3 determine transaction price；Step 4 allocate transaction price；Step 5 recognize revenue when/as each performance obligation is satisfied。每道收入题都可以按这五步拆。</p></article>
+<article class='lesson'><h3>合同条件</h3><p>合同要有 approval and commitment、identifiable rights、identifiable payment terms、commercial substance，并且 collection probable。没有满足合同条件时，不能按正常收入模型确认。</p></article>
+<article class='lesson'><h3>履约义务</h3><p>Performance obligation 是向客户转让 distinct good or service 的 promise。Distinct 意味客户能从该商品或服务本身受益，并且该承诺在合同中可单独识别。设备销售加两年服务通常可能是两个 performance obligations。</p></article>
+<article class='lesson'><h3>交易价格</h3><p>Transaction price 是企业预计有权获得的对价。Variable consideration 包括 discounts、rebates、refunds、bonuses、penalties。只有在 significant revenue reversal is not probable 时，才能纳入交易价格。</p></article>
+<article class='lesson'><h3>价格分摊</h3><p>多履约义务合同要按 relative standalone selling prices 分摊 transaction price。例：bundle price $900，product SSP $600，service SSP $400，总 SSP $1,000，则 product 分摊 $540，service 分摊 $360。</p></article>
+<article class='lesson'><h3>时点或期间确认</h3><p>Point in time recognition 发生在控制权某一时点转移。Over time recognition 适用于客户同时获得并消耗利益、客户控制在建资产，或资产无 alternative use 且企业有 enforceable right to payment 的情形。</p></article>
+<article class='lesson'><h3>长期合同</h3><p>Long-term contracts 常用 cost-to-cost method。Progress = costs incurred to date / total estimated costs。Cumulative revenue = transaction price × progress。注意题目问的是 cumulative revenue 还是 current-year revenue。</p></article>
+<article class='lesson'><h3>合同资产和合同负债</h3><p>Contract liability 是先收钱或先开账单但尚未履约。Contract asset 是已履约但收款权还取决于时间以外的条件。Accounts receivable 是 unconditional right to consideration。</p></article>
+<div class='mini-quiz' id='mini-quiz-chapter-6'><h3>课堂小测试 / Mini Check</h3><p>先自己选，再看中文解析。题目用英文，解析帮你纠错。</p><div class='mini-score'>Completed: 0 / 2</div>
+<div class='mini-q'><p><b>Q1.</b> Revenue is recognized when:</p>
+<button type='button' data-i='0' onclick='answerMini(this,1)'>A. cash is received only</button>
+<button type='button' data-i='1' onclick='answerMini(this,1)'>B. control transfers</button>
+<button type='button' data-i='2' onclick='answerMini(this,1)'>C. a contract is discussed</button>
+<div class='mini-exp'><b>解析：</b>收入确认看控制权转移和履约义务满足。</div></div>
+<div class='mini-q'><p><b>Q2.</b> A bundle sale with multiple obligations requires:</p>
+<button type='button' data-i='0' onclick='answerMini(this,0)'>A. relative SSP allocation</button>
+<button type='button' data-i='1' onclick='answerMini(this,0)'>B. no allocation</button>
+<button type='button' data-i='2' onclick='answerMini(this,0)'>C. all revenue at signing</button>
+<div class='mini-exp'><b>解析：</b>多履约义务按相对单独售价分摊。</div></div>
+</div>
+</div></section>
+<section class='chapter' id='chapter-7'><header><h2>Chapter 7: Cash and Receivables</h2><p class='mission'>现金与应收款项</p></header><div class='content'>
+<article class='lesson'><h3>现金和现金等价物</h3><p>Cash 包括货币、活期存款和不受限制的银行存款。Cash equivalents 是短期、高流动性、可迅速转换为确定现金金额且价值变动风险很小的投资。Restricted cash 要根据限制目的和期限分类。</p></article>
+<article class='lesson'><h3>银行余额调节</h3><p>Bank reconciliation 的目标是把 bank statement balance 和 book balance 调到正确现金余额。Bank side 调 deposits outstanding、checks outstanding、bank errors；book side 调 NSF checks、service charges、interest collected by bank、company errors。通常只有 book side adjustments 需要 journal entries。</p></article>
+<article class='lesson'><h3>应收账款</h3><p>Accounts receivable 来自赊销。报表不能只列 gross receivables，而要按 net realizable value，即 expected cash to be collected。NRV = Accounts receivable - Allowance for doubtful accounts。</p></article>
+<article class='lesson'><h3>坏账备抵法</h3><p>Allowance method 在相关销售发生期间估计坏账费用，符合 matching。分录是 Debit Bad Debt Expense, Credit Allowance for Doubtful Accounts。Allowance 是 contra asset。</p></article>
+<article class='lesson'><h3>销售百分比法和账龄法</h3><p>Percentage-of-sales method 直接估计当期 bad debt expense。Aging method 根据不同账龄估计 required ending allowance，然后用 required ending allowance 减 existing allowance balance 得调整额。</p></article>
+<article class='lesson'><h3>核销和收回</h3><p>Write-off specific account: Debit Allowance, Credit Accounts Receivable。核销本身通常不影响 bad debt expense，也不影响 NRV。若后来收回，先恢复 receivable，再记录 cash collection。</p></article>
+<article class='lesson'><h3>应收票据</h3><p>Notes receivable 是正式信用工具。Interest = Principal × Rate × Time。注意 90 days、3 months、360-day year 等约定。</p></article>
+<article class='lesson'><h3>应收款融资</h3><p>Receivables 可 pledge、assign、factor。Factoring 是出售应收款，是否有追索权影响风险是否真正转移。</p></article>
+<div class='mini-quiz' id='mini-quiz-chapter-7'><h3>课堂小测试 / Mini Check</h3><p>先自己选，再看中文解析。题目用英文，解析帮你纠错。</p><div class='mini-score'>Completed: 0 / 2</div>
+<div class='mini-q'><p><b>Q1.</b> Net realizable value of receivables equals:</p>
+<button type='button' data-i='0' onclick='answerMini(this,1)'>A. AR plus allowance</button>
+<button type='button' data-i='1' onclick='answerMini(this,1)'>B. AR minus allowance</button>
+<button type='button' data-i='2' onclick='answerMini(this,1)'>C. cash minus AR</button>
+<div class='mini-exp'><b>解析：</b>NRV = Accounts receivable - allowance。</div></div>
+<div class='mini-q'><p><b>Q2.</b> A write-off under the allowance method usually:</p>
+<button type='button' data-i='0' onclick='answerMini(this,1)'>A. records bad debt expense again</button>
+<button type='button' data-i='1' onclick='answerMini(this,1)'>B. debits allowance and credits AR</button>
+<button type='button' data-i='2' onclick='answerMini(this,1)'>C. increases revenue</button>
+<div class='mini-exp'><b>解析：</b>核销具体客户时冲 allowance 和 AR。</div></div>
+</div>
+</div></section>
+<section class='chapter' id='chapter-8'><header><h2>Chapter 8: Inventory Overview and Cost Flow</h2><p class='mission'>存货概览与成本流转</p></header><div class='content'>
+<article class='lesson'><h3>存货是什么</h3><p>Inventory 是企业为销售持有、正在生产、或将用于生产的资产。Merchandiser 持有 merchandise inventory；manufacturer 有 raw materials、work in process、finished goods。</p></article>
+<article class='lesson'><h3>产品成本和期间费用</h3><p>Product costs 是让存货达到可销售状态的成本，包括 purchase price、freight-in、direct materials、direct labor、manufacturing overhead。Period costs 如 selling and administrative expenses，在发生时费用化。Freight-out 是 selling expense，不是 inventory cost。</p></article>
+<article class='lesson'><h3>永续盘存制</h3><p>Perpetual inventory system 持续更新 inventory 和 COGS。购买时 Debit Inventory；销售时一方面确认 revenue，另一方面 Debit COGS, Credit Inventory。</p></article>
+<article class='lesson'><h3>定期盘存制</h3><p>Periodic inventory system 期间内不持续更新 COGS，期末通过 physical count 确定 ending inventory，再用 Beginning inventory + Net purchases - Ending inventory = COGS。</p></article>
+<article class='lesson'><h3>Specific identification</h3><p>Specific identification 适合单价高、可单独识别的商品，如汽车、珠宝。它把实际特定商品成本转入 COGS。</p></article>
+<article class='lesson'><h3>FIFO</h3><p>FIFO 假设最早购入的成本先进入 COGS。物价上涨时，COGS 较低，net income 较高，ending inventory 更接近近期成本。</p></article>
+<article class='lesson'><h3>LIFO</h3><p>LIFO 假设最近购入的成本先进入 COGS。物价上涨时，COGS 较高，net income 较低，taxable income 较低，ending inventory 使用较旧成本。IFRS 不允许 LIFO，美国 GAAP 允许。</p></article>
+<article class='lesson'><h3>Weighted-average</h3><p>Weighted-average cost = cost of goods available / units available。它平滑价格波动。Perpetual system 下常用 moving-average。</p></article>
+<article class='lesson'><h3>LIFO reserve 和 LIFO liquidation</h3><p>LIFO reserve 是 FIFO inventory 与 LIFO inventory 的差额。LIFO liquidation 发生在旧的低成本层被卖出时，可能暂时提高利润。</p></article>
+<div class='mini-quiz' id='mini-quiz-chapter-8'><h3>课堂小测试 / Mini Check</h3><p>先自己选，再看中文解析。题目用英文，解析帮你纠错。</p><div class='mini-score'>Completed: 0 / 2</div>
+<div class='mini-q'><p><b>Q1.</b> Freight-in paid by the buyer is usually:</p>
+<button type='button' data-i='0' onclick='answerMini(this,0)'>A. inventory cost</button>
+<button type='button' data-i='1' onclick='answerMini(this,0)'>B. selling expense</button>
+<button type='button' data-i='2' onclick='answerMini(this,0)'>C. interest expense</button>
+<div class='mini-exp'><b>解析：</b>买方进货运费通常计入存货成本。</div></div>
+<div class='mini-q'><p><b>Q2.</b> During rising prices, FIFO usually reports:</p>
+<button type='button' data-i='0' onclick='answerMini(this,1)'>A. higher COGS than LIFO</button>
+<button type='button' data-i='1' onclick='answerMini(this,1)'>B. lower COGS than LIFO</button>
+<button type='button' data-i='2' onclick='answerMini(this,1)'>C. no ending inventory</button>
+<div class='mini-exp'><b>解析：</b>物价上涨时 FIFO 使用较旧低成本进 COGS。</div></div>
+</div>
+</div></section>
+<section class='chapter' id='chapter-9'><header><h2>Chapter 9: Subsequent Measurement of Inventory</h2><p class='mission'>存货后续计量</p></header><div class='content'>
+<article class='lesson note'><h3>为什么存货要后续计量</h3><p>存货取得后可能损坏、变质、过时或市场价格下降。如果 expected benefit 低于成本，继续按成本列示会高估 inventory 和 income。</p></article>
+<article class='lesson'><h3>LCNRV</h3><p>Lower of cost and net realizable value 是多数存货规则。NRV = estimated selling price - reasonably predictable costs of completion, disposal, and transportation。若 NRV &lt; cost，write down inventory。</p></article>
+<article class='lesson formula'><h3>跌价分录</h3><p>如果 write-down 是常见和正常的，通常 debit Cost of Goods Sold；如果 substantial and unusual，可能 debit Loss。Credit Inventory 或 allowance account，取决于记录方式。</p></article>
+<article class='lesson'><h3>LCM</h3><p>Lower of cost or market 常见于 LIFO 或 retail method 相关语境。Market 通常是 replacement cost，但不能超过 ceiling = NRV，也不能低于 floor = NRV - normal profit margin。Designated market 是 replacement cost、ceiling、floor 的中间值。</p></article>
+<article class='lesson'><h3>逐项、分类或整体比较</h3><p>LCNRV 可按 individual items、categories 或 entire inventory 应用。逐项应用通常更保守，因为个别跌价不能被其他商品升值抵消。</p></article>
+<article class='lesson'><h3>转回</h3><p>IFRS 下如果 NRV 后来恢复，必须转回以前不再适当的 write-down，但不能超过原成本。U.S. GAAP 通常不允许转回存货跌价。</p></article>
+<article class='lesson'><h3>Gross profit method</h3><p>Gross profit method 用 gross profit rate 估计 ending inventory。先算 goods available，再估计 COGS，ending inventory = goods available - estimated COGS。注意 gross profit rate 和 cost ratio 是互补关系。</p></article>
+<article class='lesson'><h3>Retail inventory method</h3><p>Retail method 用 cost-to-retail ratio 将 ending inventory at retail 转成 cost，适合零售企业大量低价商品。</p></article>
+<div class='mini-quiz' id='mini-quiz-chapter-9'><h3>课堂小测试 / Mini Check</h3><p>先自己选，再看中文解析。题目用英文，解析帮你纠错。</p><div class='mini-score'>Completed: 0 / 2</div>
+<div class='mini-q'><p><b>Q1.</b> NRV equals:</p>
+<button type='button' data-i='0' onclick='answerMini(this,0)'>A. selling price minus completion/disposal costs</button>
+<button type='button' data-i='1' onclick='answerMini(this,0)'>B. cost plus profit</button>
+<button type='button' data-i='2' onclick='answerMini(this,0)'>C. replacement cost plus tax</button>
+<div class='mini-exp'><b>解析：</b>NRV 是预计售价减完工和处置成本。</div></div>
+<div class='mini-q'><p><b>Q2.</b> Under U.S. GAAP, inventory write-down reversals are generally:</p>
+<button type='button' data-i='0' onclick='answerMini(this,1)'>A. required</button>
+<button type='button' data-i='1' onclick='answerMini(this,1)'>B. prohibited</button>
+<button type='button' data-i='2' onclick='answerMini(this,1)'>C. recorded as dividends</button>
+<div class='mini-exp'><b>解析：</b>美国准则通常不允许转回存货跌价。</div></div>
+</div>
+</div></section>
+<section class='chapter' id='chapter-10'><header><h2>Chapter 10: Property, Plant, Equipment, and Intangible Assets</h2><p class='mission'>固定资产与无形资产</p></header><div class='content'>
+<article class='lesson'><h3>长期资产的取得成本</h3><p>PPE 和 intangible assets 是长期、用于经营、产生收入的资产。Acquisition cost 包括取得资产并使其达到 condition and location for intended use 所必要的支出。判断资本化的核心是：这笔支出是否让资产准备好投入预定用途。</p></article>
+<article class='lesson'><h3>土地</h3><p>Land 成本包括 purchase price、closing costs、title fees、attorney fees、real estate commissions、grading、clearing、draining、assumption of liens，以及拆除旧建筑的净成本。Land 不折旧，因为通常没有有限使用寿命。</p></article>
+<article class='lesson'><h3>土地改良</h3><p>Land improvements 包括 parking lots、driveways、private roads、fences、landscaping、sprinkler systems。它们有可估计使用寿命，因此单独资本化并 depreciation。不要把 land improvements 混到 land 里不折旧。</p></article>
+<article class='lesson'><h3>建筑物和设备</h3><p>Buildings 包括购买或建造成本以及使建筑达到使用状态的必要支出。Equipment 包括 purchase price、sales taxes、freight、insurance during transit、installation、testing。员工培训、广告、开业后维修通常费用化。</p></article>
+<article class='lesson'><h3>自然资源</h3><p>Natural resources 的成本包括 acquisition、exploration、development、restoration costs。后续通过 depletion 分配到开采期间。</p></article>
+<article class='lesson'><h3>无形资产</h3><p>Intangible assets 没有实物形态但能产生长期利益。Patents、copyrights、trademarks、franchises、licenses、goodwill 都是例子。有限寿命无形资产摊销；不确定寿命无形资产不摊销但测试减值。</p></article>
+<article class='lesson'><h3>研发和启动成本</h3><p>U.S. GAAP 下 R&amp;D 通常 expense as incurred。Start-up costs 也通常费用化。购买的专利或技术可资本化，内部研发形成的许多支出不能资本化。</p></article>
+<article class='lesson'><h3>一揽子购买</h3><p>Lump-sum purchase 多项资产时，用 relative fair values 分配总价。例：总价 $500,000，A fair value $300,000，B $200,000，则 A 分配 $300,000，B 分配 $200,000。</p></article>
+<article class='lesson'><h3>延期付款</h3><p>如果资产通过长期延期付款取得，资产成本应按现金价格或未来付款的 present value 入账，超过现值的部分作为 interest。</p></article>
+<article class='lesson'><h3>非货币性资产交换</h3><p>Nonmonetary exchange 通常按 fair value 计量，如果具有 commercial substance；若缺乏 commercial substance 或 fair value 不可靠，处理会不同。</p></article>
+<article class='lesson'><h3>自建资产和利息资本化</h3><p>Self-constructed assets 包括材料、人工、制造费用。Qualifying asset 建造期间可以资本化 avoidable interest，但 capitalized interest 不能超过 actual interest。</p></article>
+<div class='mini-quiz' id='mini-quiz-chapter-10'><h3>课堂小测试 / Mini Check</h3><p>先自己选，再看中文解析。题目用英文，解析帮你纠错。</p><div class='mini-score'>Completed: 0 / 2</div>
+<div class='mini-q'><p><b>Q1.</b> Land improvements are usually:</p>
+<button type='button' data-i='0' onclick='answerMini(this,1)'>A. not depreciated</button>
+<button type='button' data-i='1' onclick='answerMini(this,1)'>B. depreciated over useful lives</button>
+<button type='button' data-i='2' onclick='answerMini(this,1)'>C. reported as inventory</button>
+<div class='mini-exp'><b>解析：</b>土地改良有使用寿命，要折旧。</div></div>
+<div class='mini-q'><p><b>Q2.</b> Internally generated goodwill is generally:</p>
+<button type='button' data-i='0' onclick='answerMini(this,1)'>A. recognized as an asset</button>
+<button type='button' data-i='1' onclick='answerMini(this,1)'>B. not recognized</button>
+<button type='button' data-i='2' onclick='answerMini(this,1)'>C. recorded as revenue</button>
+<div class='mini-exp'><b>解析：</b>内部形成商誉不入账。</div></div>
+</div>
+</div></section>
+<section class='chapter' id='chapter-11'><header><h2>Chapter 11: Depreciation, Impairment, and Disposal / Asset Cost Allocation</h2><p class='mission'>折旧、减值与处置</p></header><div class='content'>
+<article class='lesson'><h3>成本分配概览</h3><p>PPE、自然资源和有限寿命无形资产的取得成本要分配到受益期间。PPE 用 depreciation，自然资源用 depletion，无形资产用 amortization。折旧不是估值，而是 systematic and rational cost allocation。</p></article>
+<article class='lesson'><h3>折旧三要素</h3><p>Depreciation 需要确定 service life、allocation base、allocation method。Allocation base = acquisition cost - residual value。Service life 可能短于 physical life，因为技术变化、使用强度、法律限制或管理政策会缩短经济使用期。</p></article>
+<article class='lesson'><h3>Straight-line method</h3><p>Straight-line depreciation = (Cost - residual value) / useful life。每期费用相同，适合利益模式比较平均的资产。</p></article>
+<article class='lesson'><h3>Units-of-production method</h3><p>Units-of-production rate = (Cost - residual value) / estimated total units。Depreciation expense = rate × actual units。适合使用量和产出量能反映资产消耗的情况。</p></article>
+<article class='lesson'><h3>Declining-balance method</h3><p>Double-declining-balance = beginning book value × 2/useful life。它不直接扣 residual value 来算每期基础，但不能把 book value 折到低于 residual value。前期费用高，后期费用低。</p></article>
+<article class='lesson'><h3>部分年度折旧</h3><p>资产不是年初购买时，要按实际使用月份或公司政策计算 partial-year depreciation。考试要注意 purchase date 和 fiscal year-end。</p></article>
+<article class='lesson'><h3>估计变更</h3><p>Residual value、useful life 或未来产量估计改变时，按 prospective treatment。不要重算以前年度。用变更日 book value 减 revised residual value，再按 remaining useful life 分配。</p></article>
+<article class='lesson'><h3>减值迹象</h3><p>当市场环境、技术、法规、使用方式或经营表现显示资产可能不可收回时，要考虑 impairment。ESG 相关法规也可能导致资产减值，例如化石燃料资产未来现金流下降。</p></article>
+<article class='lesson'><h3>U.S. GAAP 减值测试</h3><p>Held-for-use long-lived assets 先做 recoverability test：carrying amount 与 undiscounted future cash flows 比。如果 carrying amount 大于 undiscounted cash flows，资产不可收回。然后 impairment loss = carrying amount - fair value。</p></article>
+<article class='lesson'><h3>持有待售资产</h3><p>Assets held for sale 通常按 lower of book value or fair value less cost to sell 计量，不再折旧，因为不再通过使用产生主要利益。</p></article>
+<article class='lesson'><h3>处置</h3><p>处置资产前先补提折旧到处置日，再 remove cost 和 accumulated depreciation。Gain/loss = proceeds - book value。若 proceeds 大于 book value 是 gain，反之是 loss。</p></article>
+<article class='lesson'><h3>后续支出</h3><p>Ordinary repairs and maintenance 维持资产现有状态，费用化。Additions、improvements、betterments 若增加 future service potential，通常资本化。</p></article>
+<div class='mini-quiz' id='mini-quiz-chapter-11'><h3>课堂小测试 / Mini Check</h3><p>先自己选，再看中文解析。题目用英文，解析帮你纠错。</p><div class='mini-score'>Completed: 0 / 2</div>
+<div class='mini-q'><p><b>Q1.</b> Depreciation is best described as:</p>
+<button type='button' data-i='0' onclick='answerMini(this,1)'>A. fair value adjustment</button>
+<button type='button' data-i='1' onclick='answerMini(this,1)'>B. cost allocation</button>
+<button type='button' data-i='2' onclick='answerMini(this,1)'>C. cash payment</button>
+<div class='mini-exp'><b>解析：</b>折旧是成本分配，不是公允价值调整。</div></div>
+<div class='mini-q'><p><b>Q2.</b> The first U.S. GAAP impairment step for held-for-use assets compares carrying amount with:</p>
+<button type='button' data-i='0' onclick='answerMini(this,0)'>A. undiscounted future cash flows</button>
+<button type='button' data-i='1' onclick='answerMini(this,0)'>B. tax basis</button>
+<button type='button' data-i='2' onclick='answerMini(this,0)'>C. original invoice</button>
+<div class='mini-exp'><b>解析：</b>可收回性测试用未折现未来现金流。</div></div>
+</div>
+</div></section>
+</main></div><a class='backtop' href='#top'>Top</a>
+<script id="review-interaction-script">
+function answerMini(btn, correctIndex){
+  const q = btn.closest('.mini-q');
+  const buttons = Array.from(q.querySelectorAll('button[data-i]'));
+  const chosen = Number(btn.dataset.i);
+  buttons.forEach((b,i)=>{b.classList.toggle('correct', i===correctIndex); b.classList.toggle('wrong', i===chosen && i!==correctIndex);});
+  q.querySelector('.mini-exp').style.display='block';
+  q.dataset.done='1';
+  updateMiniScore(q.closest('.mini-quiz'));
+}
+function updateMiniScore(box){
+  const qs = Array.from(box.querySelectorAll('.mini-q'));
+  let done=0, right=0;
+  qs.forEach(q=>{ if(q.dataset.done==='1'){done++; const chosen=Array.from(q.querySelectorAll('button[data-i]')).findIndex(b=>b.classList.contains('wrong')||b.classList.contains('correct')&&b.matches(':focus')); }});
+  right = qs.filter(q=>q.querySelector('button.correct') && !q.querySelector('button.wrong')).length;
+  box.querySelector('.mini-score').textContent = 'Completed: '+done+' / '+qs.length;
+}
+</script>
+
+</body></html>
